@@ -1,0 +1,36 @@
+# Node
+npm-debug.log
+yarn-error.log
+
+# OS or Editor files
+._*
+.DS_Store
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDE
+.idea/ 
+
+# vi
+*~
+
+# General
+*.log
+
+# Package managers
+bower_components
+node_modules
+
+# Misc
+.npmrc
+.yarnrc
+.vscode
+*.sass-cache
