@@ -15,3 +15,11 @@
     ~/.config/git/: 
       path: git/*
       glob: true
+- shell:
+  - command: brew update
+  - command: brew upgrade
+  - command: brew upgrade --cask
+  - command: brew bundle cleanup --force --file="brew/Brewfile"
+  - command: fish -c fisher
+  - command: fisher install mattgreen/lucid.fish
+  - command: fisher install acomagu/fish-async-prompt
