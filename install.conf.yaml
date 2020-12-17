@@ -11,7 +11,7 @@
     ~/.config/fish/:
       glob: true
       path: fish/*
-      force: true
     # Git
-    ~/.config/git/config: 
-      path: git/config
+    ~/.config/git/: 
+      path: git/*
+      glob: true

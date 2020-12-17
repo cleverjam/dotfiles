@@ -2,4 +2,4 @@
     name = Jaime Liz
     email = lizjaime@gmail.com
 [core]
-	excludesfile = ~/.config/git/ignore
+    excludesFile = ~/.config/git/ignore
