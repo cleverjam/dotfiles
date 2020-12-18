@@ -3,25 +3,30 @@
       relink: true
       create: true
       force: true
+    shell:
+      stdin: true
+      stdout: true
+      stderr: true
 - clean:
     ~/.config:
       recursive: true
 - link:
- # Fish
-    ~/.config/fish/:
+    # Fish
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/fishfile: fish/fishfile
+    ~/.config/fish/fish_variables: fish/fish_variables
+    ~/.config/fish/functions/:
+      path: fish/functions/*
       glob: true
-      path: fish/*
     # Git
-    ~/.config/git/: 
+    ~/.config/git/:
       path: git/*
       glob: true
-    ~/.config/brewfile/Brewfile: 
+    ~/.config/brewfile/Brewfile:
       path: brew/Brewfile
 - shell:
-  - command: brew update
-  - command: brew upgrade
-  - command: brew upgrade --cask
-  - command: brew bundle install --file=~/.config/brewfile/Brewfile
-  - command: fish -c fisher
-  - command: fisher install mattgreen/lucid.fish
-  - command: fisher install acomagu/fish-async-prompt
+    - command: brew update
+    - command: brew upgrade
+    - command: brew upgrade --cask
+    - command: brew bundle install --file=~/.config/brewfile/Brewfile
+    - command: curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fish -c fisher
