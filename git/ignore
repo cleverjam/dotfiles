@@ -34,3 +34,5 @@ node_modules
 .yarnrc
 .vscode
 *.sass-cache
+.yarn/
+.yarnrc.yml
