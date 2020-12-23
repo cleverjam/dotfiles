@@ -5,3 +5,5 @@
     email = lizjaime@gmail.com
 [core]
     excludesFile = ~/.config/git/ignore
+[pull]
+	ff = only
