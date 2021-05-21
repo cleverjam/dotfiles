@@ -192,13 +192,10 @@ end
 
 function fish_prompt
     set -l cwd (pwd | string replace "$HOME" '~')
-    set -l k8_context (kubectl config current-context)
     
     echo ''
     set_color $lucid_cwd_color
     echo -sn "$cwd"
-    set_color brown
-    echo -sn " [$k8_context]"
     
     if test $cwd != '~'
         set -l git_state (__lucid_git_status)
@@ -215,4 +212,11 @@ function fish_prompt
     set_color normal
 
     echo -n "$lucid_prompt_symbol "
+end
+
+function fish_right_prompt -d "Write out the right prompt"
+    set -l k8_context (kubectl config current-context)
+
+    set_color brown
+    echo -sn " [$k8_context]"
 end
