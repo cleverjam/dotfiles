@@ -10,8 +10,6 @@
 - clean:
     ~/.config:
       recursive: true
-    ~/.tmux:
-      recursive: true
 - link:
     # Fish
     ~/.config/fish/config.fish: fish/config.fish
@@ -20,8 +18,6 @@
     ~/.config/fish/aliases.fish: fish/aliases.fish
     ~/.config/fish/functions/_add_to_path.fish: fish/functions/_add_to_path.fish
     ~/.config/fish/functions/fish_prompt.fish: fish/functions/fish_prompt.fish
-    # tmux
-    ~/.config/tmux/tmux.conf: tmux/tmux.conf
     # vim
     # ~/.vim: vim/
     ~/.vimrc: .vimrc
