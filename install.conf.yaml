@@ -39,4 +39,5 @@
     - command: brew upgrade
     - command: brew upgrade --cask
     - command: brew bundle install --file=~/.config/brewfile/Brewfile
-    - command: curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+    - command: fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+
