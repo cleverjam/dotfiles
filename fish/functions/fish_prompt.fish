@@ -215,12 +215,12 @@ function fish_prompt
 end
 
 function fish_right_prompt -d "Write out the right prompt"
-    if test -d ~/.kube/config
-        set -l  k8s_context (cat ~/.kube/config | grep "current-context:" | sed "s/current-context: //")
-    end
-    if set -q k8s_context 
-        set -l k8_context (kubectl config current-context)
-        set_color brown
-        echo -sn " [$k8_context]"
+    if test -e ~/.kube/config
+        set -l k8s_context (cat ~/.kube/config | grep "current-context:" | sed "s/current-context: //")
+        if set -q k8s_context
+                set -l k8_context (kubectl config current-context)
+                set_color brown
+                echo -sn " [$k8_context]"
+            end
     end
 end
