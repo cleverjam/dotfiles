@@ -9,3 +9,9 @@ source ~/.config/fish/aliases.fish
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 _add_to_path /opt/homebrew/bin
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /opt/homebrew/Caskroom/miniforge/base/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+
