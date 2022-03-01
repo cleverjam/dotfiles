@@ -15,4 +15,4 @@ eval /usr/local/Caskroom/miniforge/base/bin/conda "shell.fish" "hook" $argv | so
 # <<< conda initialize <<<
 
 
-source /usr/local/opt/asdf/libexec/asdf.fish
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
