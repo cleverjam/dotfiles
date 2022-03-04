@@ -37,5 +37,6 @@
     - command: fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
     - command: echo -e "\nsource "(brew --prefix asdf)"/libexec/asdf.fish" >> ~/.config/fish/config.fish
     - command: mkdir -p ~/.config/fish/completions
+    - command: rustup-init -y
     - command: rustup completions fish > ~/.config/fish/completions/rustup.fish
     - command: conda init fish
