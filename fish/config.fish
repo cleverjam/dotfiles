@@ -7,4 +7,4 @@ set fish_greeting
 source ~/.config/fish/aliases.fish
 
 _add_to_path /opt/homebrew/bin
-_add_to_path  /Users/cleverjam/.cargo/bin
+_add_to_path  $HOME/.cargo/bin
