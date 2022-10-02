@@ -19,6 +19,10 @@ Temporary Items
 # IDE
 .idea/ 
 
+
+# asdf
+.tool-versions
+
 # vi
 *~
 
