@@ -8,3 +8,5 @@ source ~/.config/fish/aliases.fish
 
 _add_to_path /opt/homebrew/bin
 _add_to_path  $HOME/.cargo/bin
+_add_to_path /opt/homebrew/opt/libpq/bin
+
