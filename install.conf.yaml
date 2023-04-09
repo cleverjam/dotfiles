@@ -16,7 +16,6 @@
     ~/.config/fish/fishfile: fish/fishfile
     ~/.config/fish/aliases.fish: fish/aliases.fish
     ~/.config/fish/functions/_add_to_path.fish: fish/functions/_add_to_path.fish
-    ~/.config/fish/functions/fish_prompt.fish: fish/functions/fish_prompt.fish
     # vim
     # ~/.vim: vim/
     ~/.vimrc: .vimrc
@@ -35,6 +34,7 @@
     - command: brew upgrade --cask
     - command: brew bundle install --file=~/.config/brewfile/Brewfile
     - command: fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+    - command: fish
     - command: echo -e "\nsource "(brew --prefix asdf)"/libexec/asdf.fish" >> ~/.config/fish/config.fish
     - command: mkdir -p ~/.config/fish/completions
     - command: rustup-init -y
