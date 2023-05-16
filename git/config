@@ -1,13 +1,5 @@
-[init]
-    defaultBranch = main
-[user]
-    name = Jaime Liz
-    email = lizjaime@gmail.com
-[core]
-    excludesFile = ~/.config/git/ignore
-[pull]
-	ff = only
-
+[includeIf "gitdir:~/Workspace/external/"]
+  path = ~/.config/git/personal.gitconfig
 
 [includeIf "gitdir:~/Workspace/internal/"]
-  path = ~/github.gitconfig
+  path = ~/.config/git/intuit.gitconfig

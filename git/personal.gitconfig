@@ -1,11 +1,9 @@
 [init]
-    defaultBranch = master
+    defaultBranch = main
 [user]
     name = Jaime Liz
-    email = jaime_liz@intuit.com
+    email = lizjaime@gmail.com
 [core]
     excludesFile = ~/.config/git/ignore
 [pull]
 	ff = only
-
-
