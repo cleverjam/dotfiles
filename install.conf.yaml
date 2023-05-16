@@ -15,6 +15,7 @@
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/fishfile: fish/fishfile
     ~/.config/fish/aliases.fish: fish/aliases.fish
+    ~/.config/fish/functions/_multicd.fish: fish/functions/_multicd.fish
     ~/.config/fish/functions/_add_to_path.fish: fish/functions/_add_to_path.fish
     # vim
     # ~/.vim: vim/
