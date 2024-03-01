@@ -5,7 +5,7 @@
 [user]
     name = Jaime Liz
     email = lizjaime@gmail.com
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHKK/+ZK1JgHSGnEoJT0H9Vdv/ZoRTbROAxCvmw20R15
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFDCf/B2hHQp9dmrcbq3MZB7j92KSEBeHUKWeXopIz7E
 [core]
     excludesFile = ~/.config/git/ignore
 [pull]
