@@ -1,9 +1,14 @@
+[commit]
+    gpgsign = true
 [init]
     defaultBranch = main
 [user]
     name = Jaime Liz
     email = lizjaime@gmail.com
+    signingkey = ~/.ssh/id_ed25519.pub
 [core]
     excludesFile = ~/.config/git/ignore
 [pull]
 	ff = only
+[gpg]
+    program = gpg

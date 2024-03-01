@@ -1,5 +1,10 @@
-[includeIf "gitdir:~/Workspace/external/"]
+[includeIf "gitdir:~/Workspace/"]
   path = ~/.config/git/personal.gitconfig
 
 [includeIf "gitdir:~/Workspace/internal/"]
   path = ~/.config/git/intuit.gitconfig
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
