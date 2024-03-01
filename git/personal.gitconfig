@@ -5,10 +5,13 @@
 [user]
     name = Jaime Liz
     email = lizjaime@gmail.com
-    signingkey = 48D8FDEEBBD20F282C9DB6455AD795F4D491719C
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHKK/+ZK1JgHSGnEoJT0H9Vdv/ZoRTbROAxCvmw20R15
 [core]
     excludesFile = ~/.config/git/ignore
 [pull]
 	ff = only
 [gpg]
-    program = gpg
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
